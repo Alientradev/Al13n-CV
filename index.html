@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Favicon  -->
+    <link rel="shortcut icon" href="assets/logo.png">
+    <title>Pagina Web</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+
+<body>
+
+    <!-- Header  -->
+
+    <header class="header">
+        <section class="header-container">
+            <div class="logo">
+                <a href="#home">
+                    <img src="./assets/logo.png" alt="">
+                </a>
+            </div>
+            <button class="menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(66,188,243,1)" /></svg>
+                <svg class="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                        d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"
+                        fill="rgba(66,188,243,1)" /></svg>
+            </button>
+            <nav class="menu">
+                <a href="#profile">Perfil</a>
+                <a href="#portfolio">Portafolio</a>
+                <a href="#contact">Contactame</a>
+            </nav>
+        </section>
+    </header>
+
+    <!-- home  -->
+
+    <section class="home full-screen" id="home">
+        <div class="home-content">
+            <h1>Julian Casanova</h1>
+            <h2>Bienvenid@s</h2>
+            <div class="space"></div>
+        </div>
+    </section>
+
+    <div class="web-container">
+
+        <!-- profile -->
+
+        <section class="profile" id="profile">
+            <div class="profile-content">
+                <article class="my-profile">
+                    <aside>
+                        <h2>Julian Casanova</h2>
+                    </aside>
+                    <img src="./assets/photo.webp" alt="Foto de Perfil">
+                    <p>Soy una persona apasionada por la tecnología con experiencia como analista informático, con muy
+                        buena actitud y deseos de aprender para seguir creciendo profesionalmente, capacitado para
+                        analizar y adaptar las tecnologías de la información a los requerimientos actuales , siempre
+                        dispuesto a cumplir las metas propuestas.
+                    </p>
+                </article>
+                <article class="education">
+                    <h3>Educacion</h3>
+                    <p>Soy tecnólogo en telecomunicaciones graduado en el Instituto Tecnológico Metropolitano de
+                        Medellín, técnico en ingles con énfasis en sistemas del Politécnico Americano y actualmente
+                        estudiante de tercer semestre de tecnología en desarrollo de software en la Fundacion
+                        Universitaria Católica del Norte.</p>
+                    <h3>Experiencia</h3>
+                    <p>Tengo mas de 4 años de experiencia en cargos de TI como analista de infraestructura y gestor en
+                        servicios de tecnología para varias empresas en la ciudad de Medellín</p>
+                </article>
+                <article class="skills">
+                    <h3>Habilidades</h3>
+                    <p>Desarrollo Web Front End - Desarrollo de Software - Computación en la nube - Infraestructura de
+                        TI - Seguridad informática - Bases de datos</p>
+                    <h3>Hobbies</h3>
+                    <p>Mis actividades favoritas son leer, principalmente generos como distopia o ciencia ficción,
+                        escuchar musica Rock y Blues, jugar videojuegos, viajar y recorrer caminos en moto.</p>
+                    <a class="linkedin btn" href="https://www.linkedin.com/in/julicape/" target="blank"
+                        rel="noopener">Visita mi Linkedin</a>
+                    <div class="download-cv">
+                        <a class="btn" href="assets/CV-Web.pdf" target="_blank" rel="noopener">Descarga Mi CV</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- portfolio -->
+
+        <section class="portfolio" id="portfolio">
+            <div class="portfolio-content">
+                <div class="under-construction">
+                    <img src="assets/under-construction.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- contact -->
+
+        <section class="contact full-screen" id="contact">
+            <div class="contact-content">
+                <form class="contact-form">
+                    <h2>Enviame un mensaje</h2>
+                    <input type="text" name="name" placeholder="Ingresa tu nombre *"
+                        title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                        required>
+                    <input type="email" name="email" placeholder="Ingresa tu correo *" title="Email incorrecto"
+                        pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                    <textarea name="comments" cols="50" rows="10" placeholder="Déjame tus comentarios *"
+                        required></textarea>
+                    <div class="contact-form-loader text-center none"> <img class="none" src=" assets/loader.svg"
+                            alt="Enviando...">
+                    </div>
+                    <input class="btn" type="submit" value="ENVIAR MENSAJE">
+                </form>
+                <article id="gracias" class="modal">
+                    <div class="modal-content">
+                        <article class="contact-form-response">
+                            <h3>Mensaje Enviando<br>¡Muchas Gracias!</h3>
+                        </article>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+
+    <!-- <footer class="footer">
+        <small> This website was designed on planet earth with ❤️ by Julian 👽  </small>
+        <a href="https://www.youtube.com/watch?v=kHCn5h4_dh0&list=PLUja9J5M1XReqoBal5IKog_PWz2Q_hZ7Y" target="_blank" rel="noopener">Click!</a>
+      </footer> -->
+
+    <script src="./JS/app.js"></script>
+
+</body>
+
+</html>
+
+<!-- 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@(////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@////////////(@@@@@@@@@@@@
+@@@@@@@@@@/////////////(@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@(/////////////@@@@@@@@@@@
+@@@@@@@@@//////////@@@@@@@@@@@@@@@@/////////&@@@@@@@@@@@@@@@//////////@@@@@@@@@@
+@@@@@@@@@/////////@@@@@@@@@@@@///////////////////@@@@@@@@@@@@/////////@@@@@@@@@@
+@@@@@@@@@/////////@@@@@@@@@(////////////////////////@@@@@@@@@/////////@@@@@@@@@@
+@@@@@@@@@/////////@@@@@@@@///////////////////////////(@@@@@@@/////////@@@@@@@@@@
+@@@@@@@@@////////(@@@@@@(//////////////////////////////@@@@@@#////////@@@@@@@@@@
+@@@@@@@@@////////&@@@@@@///////////////////////////////&@@@@@&////////(@@@@@@@@@
+@@@@@@@@(////////@@@@@@/////////////////////////////////@@@@@@/////////@@@@@@@@@
+@@@@@///////////@@@@@@@/////////////////////////////////@@@@@@@///////////@@@@@@
+@@@@//////////@@@@@@@@@/@@@@@@@@(/////////////(@@@@@@@(/@@@@@@@@@//////////@@@@@
+@@@@(///////////@@@@@@@@/@@@@@@@@@@@///////@@@@@@@@@@%/@@@@@@@@///////////(@@@@@
+@@@@@@@@/////////@@@@@@@///@@@@@@@@@@&///@@@@@@@@@@&///@@@@@@@/////////&@@@@@@@@
+@@@@@@@@/////////(@@@@@@@///////@@@@@////%@@@@@///////@@@@@@@#/////////@@@@@@@@@
+@@@@@@@@@/////////@@@@@@@@///////////////////////////@@@@@@@@/////////@@@@@@@@@@
+@@@@@@@@@/////////@@@@@@@@@%///////////////////////#@@@@@@@@@/////////@@@@@@@@@@
+@@@@@@@@@/////////@@@@@@@@@@@/////////////////////@@@@@@@@@@@/////////@@@@@@@@@@
+@@@@@@@@@/////////@@@@@@@@@@@@@/////////////////@@@@@@@@@@@@@/////////@@@@@@@@@@
+@@@@@@@@@//////////@@@@@@@@@@@@@@&///////////&@@@@@@@@@@@@@@//////////@@@@@@@@@@
+@@@@@@@@@&/////////////&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@/////////////&@@@@@@@@@@
+@@@@@@@@@@@/////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@/////////////@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-->
