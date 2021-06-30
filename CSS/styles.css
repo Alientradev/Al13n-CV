@@ -207,6 +207,7 @@ body::-webkit-scrollbar-thumb {
 
     .header-container {
         max-width: 1200px;
+        margin: 0 auto;
     }
 
     .menu-btn {
@@ -337,22 +338,29 @@ body::-webkit-scrollbar-thumb {
 .my-profile {
     grid-area: my-profile;
     text-align: center;
-
+    border: thin solid var(--first-color);
+    border-radius: 10px;
 }
 
 .profile img {
     margin: 10px;
     border-radius: 50%;
+    border: thin solid var(--first-color);
+    /* border-radius: 10px; */
 }
 
 .education {
     grid-area: education;
     text-align: center;
+    border: thin solid var(--first-color);
+    border-radius: 10px;
 }
 
 .skills {
     grid-area: skills;
     text-align: center;
+    border: thin solid var(--first-color);
+    border-radius: 10px;
 }
 
 .download-cv a {
@@ -392,7 +400,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* ---------------------------------------------- Portfolio Container CSS---------------------------------------------- */
-
 
 .portfolio-content {
     margin: 40px 20px;
@@ -602,22 +609,38 @@ loader-none img {
 
 }
 
-/* Stars Animation */
+/* ---------------------------------------------- Footer ---------------------------------------------- */
 
+.footer {
+    display: none;
+}
 
-/* .stars {
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    width:100%;
-    height:100%;
-    display:block;
-  }
+@media screen and (min-width: 1024px) {
 
-  .stars {
-    background: url(/assets/stars.png) repeat top center;
-    z-index:0;
-    -webkit-transform: spin 1s linear infinite;
-  } */
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 999;
+        padding: .5rem 1rem .5rem 1rem;
+        width: 100%;
+        height: 2rem;
+        background: rgba(0, 0, 0, 0.70);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(7.0px);
+        -webkit-backdrop-filter: blur(5.0px);
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer a {
+        color: transparent;
+    }
+
+    .footer a:hover {
+        color: var(--white);
+    }
+
+}
+
+    /* ---------------------------------------------- Animations ---------------------------------------------- */
