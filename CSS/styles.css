@@ -205,7 +205,7 @@ body::-webkit-scrollbar-thumb {
         box-shadow: 0px 1px 15px 5px rgba(0, 0, 0, 0.92);
     }
 
-    .header-container{
+    .header-container {
         max-width: 1200px;
     }
 
@@ -286,12 +286,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media screen and (min-width: 1024px) {
-    
-    .home h1{
+
+    .home h1 {
         text-align: center;
         font-size: 4rem;
     }
-    .home h2{
+
+    .home h2 {
         text-align: center;
         font-size: 4rem;
     }
@@ -339,7 +340,7 @@ body::-webkit-scrollbar-thumb {
 
 }
 
-.profile img{
+.profile img {
     margin: 10px;
     border-radius: 50%;
 }
@@ -354,12 +355,12 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
 }
 
-.download-cv a{
+.download-cv a {
     margin: 10px;
 }
 
 @media screen and (min-width: 1024px) {
-    
+
     .profile-content {
         max-width: 1200px;
         margin-top: 6rem;
@@ -370,24 +371,24 @@ body::-webkit-scrollbar-thumb {
         gap: 10px 10px;
         grid-template-areas: "my-profile education skills"
     }
-    
+
     .my-profile {
         padding: 20px;
         grid-area: my-profile;
         text-align: center;
     }
-    
+
     .education {
         padding: 20px;
         grid-area: education;
         text-align: center;
     }
-    
+
     .skills {
         padding: 20px;
         grid-area: skills;
     }
-    
+
 }
 
 /* ---------------------------------------------- Portfolio Container CSS---------------------------------------------- */
@@ -405,27 +406,69 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.under-construction img{
-    width: 100%;
-}
-
 @media screen and (min-width: 1024px) {
-    
+
     .portfolio-content {
         max-width: 1200px;
         margin-top: 6rem;
+        display: flex;
+        flex-direction: column;
     }
 
-    .under-construction img{
-        width: 1200px;
-        height: 500px;
+    .board {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 10% 1fr 1fr;
+        gap: 10px 10px;
+        grid-template-areas:
+            "my-projects my-projects my-projects my-projects"
+            "project-1 project-2 project-3 project-4"
+            "project-5 project-6 project-7 project-8";
+        text-align: center;
+    }
+
+    .my-projects {
+        grid-area: my-projects;
+        text-align: center;
+    }
+
+    .project-2 {
+        grid-area: project-2;
+    }
+
+    .project-1 {
+        grid-area: project-1;
+    }
+
+    .project-3 {
+        grid-area: project-3;
+    }
+
+    .project-4 {
+        grid-area: project-4;
+    }
+
+    .project-5 {
+        grid-area: project-5;
+    }
+
+    .project-6 {
+        grid-area: project-6;
+    }
+
+    .project-7 {
+        grid-area: project-7;
+    }
+
+    .project-8 {
+        grid-area: project-8;
     }
 
 }
 
 /* ---------------------------------------------- Profile Container CSS---------------------------------------------- */
 
-.contact{
+.contact {
     display: flex;
     justify-content: center;
 }
@@ -437,15 +480,15 @@ body::-webkit-scrollbar-thumb {
     max-width: var(--max-width);
     border: thin solid var(--first-color);
     border-radius: 10px;
-    background: rgba( 0, 0, 0, 0.70 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 10.0px );
-    -webkit-backdrop-filter: blur( 5.0px );
+    background: rgba(0, 0, 0, 0.70);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10.0px);
+    -webkit-backdrop-filter: blur(5.0px);
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.contact-form > * {
+.contact-form>* {
     margin: 1rem auto;
     padding: 0.5rem;
     display: block;
@@ -455,9 +498,9 @@ body::-webkit-scrollbar-thumb {
 .contact-form input,
 .contact-form textarea {
     font-size: 0.85rem;
-    color: var(--white); 
+    color: var(--white);
     font-family: var(--title-font);
-    background-color: rgba(0,0,0,0.90);
+    background-color: rgba(0, 0, 0, 0.90);
     border-radius: 10px;
 }
 
@@ -499,9 +542,9 @@ body::-webkit-scrollbar-thumb {
 .modal#gracias:target {
     opacity: 1;
     pointer-events: auto;
-  }
+}
 
-  .contact-form-response {
+.contact-form-response {
     padding: 1rem;
     width: 400px;
     text-align: center;
@@ -511,7 +554,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 10px;
 }
 
-  .contact-form h2 {
+.contact-form h2 {
     text-shadow: var(--text-Shadow);
 }
 
@@ -519,14 +562,14 @@ contact-form-loader img {
     margin: 0;
 }
 
-loader-none img{
+loader-none img {
     display: none;
-} 
+}
 
 /* Contact CSS media queris*/
 
 @media screen and (min-width: 1024px) {
-    
+
     .contact-form {
         margin-top: 6rem;
         display: grid;
@@ -537,25 +580,25 @@ loader-none img{
 
     .contact-form input,
     .contact-form textarea {
-    font-size: 1rem;
-}
+        font-size: 1rem;
+    }
 
-.contact-form textarea {
-    grid-column: span 2;
-}
+    .contact-form textarea {
+        grid-column: span 2;
+    }
 
-.contact-form h2 {
-    grid-column: span 2;
-    margin: 0;
-}
+    .contact-form h2 {
+        grid-column: span 2;
+        margin: 0;
+    }
 
-.contact-form-loader {
-    grid-column: span 2;
-}
+    .contact-form-loader {
+        grid-column: span 2;
+    }
 
-.contact-form input[type="submit"] {
-    margin-left: 0;
-}
+    .contact-form input[type="submit"] {
+        margin-left: 0;
+    }
 
 }
 
