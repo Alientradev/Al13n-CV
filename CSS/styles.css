@@ -417,7 +417,7 @@ body::-webkit-scrollbar-thumb {
 .portfolio-content {
     margin: 40px 20px;
     padding: 10px;
-    /* margin-top: 5rem;  */
+    margin-top: 5rem;
     background: rgba(0, 0, 0, 0.50);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(5.0px);
