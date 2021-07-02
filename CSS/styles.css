@@ -291,6 +291,7 @@ body::-webkit-scrollbar-thumb {
     background-image: url("/assets/hero-image-3.webp");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
     width: 100%;
     z-index: -1;
@@ -317,7 +318,7 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to right, #b3b3b3, #909090, #6f6f6f, #505050, #323232); 
+    background-image: linear-gradient(to right, #eeeeee, #bdbdbd, #8f8f8f, #646464, #3b3b3b);
     gap: 20px;
 }
 
@@ -430,7 +431,7 @@ body::-webkit-scrollbar-thumb {
     max-width: 1200px;
     margin: 10px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 5% 1fr 1fr;
     gap: 5px 5px;
     grid-template-areas:
@@ -785,5 +786,3 @@ loader-none img {
     }
 
 }
-
-/* ---------------------------------------------- Animations ---------------------------------------------- */
