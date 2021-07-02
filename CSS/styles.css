@@ -277,13 +277,13 @@ body::-webkit-scrollbar-thumb {
 
 /* ---------------------------------------------- Home hero Image CSS---------------------------------------------- */
 
-.home{
+.home {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.home-content{
+.home-content {
     position: absolute;
 }
 
@@ -417,7 +417,7 @@ body::-webkit-scrollbar-thumb {
 .portfolio-content {
     margin: 40px 20px;
     padding: 10px;
-    /* Styles  */
+    /* margin-top: 5rem;  */
     background: rgba(0, 0, 0, 0.50);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(5.0px);
@@ -426,66 +426,196 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-@media screen and (min-width: 1024px) {
+.projects-content {
+    max-width: 1200px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 5% 1fr 1fr;
+    gap: 5px 5px;
+    grid-template-areas:
+        "my-projects my-projects my-projects my-projects"
+        "project-1 project-2 project-3 project-4"
+        "project-5 project-6 project-7 project-8";
+}
+
+.my-projects {
+    grid-area: my-projects;
+}
+
+.my-projects h2 {
+    margin: 0 auto;
+}
+
+.project-2 {
+    grid-area: project-2;
+    text-align: center;
+}
+
+.project-3 {
+    grid-area: project-3;
+    text-align: center;
+}
+
+.project-4 {
+    grid-area: project-4;
+    text-align: center;
+}
+
+.project-5 {
+    grid-area: project-5;
+    text-align: center;
+}
+
+.project-6 {
+    grid-area: project-6;
+    text-align: center;
+}
+
+.project-7 {
+    grid-area: project-7;
+    text-align: center;
+}
+
+.project-8 {
+    grid-area: project-8;
+    text-align: center;
+}
+
+.project-1 {
+    grid-area: project-1;
+    text-align: center;
+}
+
+.card-container {
+    margin: 2px auto;
+}
+
+.card-container a {
+    display: inline-block;
+}
+
+.card-container:hover figure {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card-container:hover figure img {
+    filter: blur(5px);
+}
+
+figure {
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+    position: relative;
+    transition: all ease .5s;
+    transform-style: preserve-3d;
+    transform: perspective(600px) rotateY(0deg);
+}
+
+figure .front-card,
+figure .back-card {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition: all ease .5s;
+}
+
+figure .front-card {
+    display: block;
+}
+
+figure .back-card {
+    position: absolute;
+    top: 0;
+    padding: 30px;
+    transform: perspective(600px) rotateY(180deg);
+    backface-visibility: hidden;
+    overflow: auto;
+}
+
+figure .back-card {
+    position: absolute;
+    top: 0;
+    padding: 30px;
+    transform: perspective(600px) rotateY(180deg);
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+figure .back-card a {
+    font-size: 1rem;
+}
+
+figure .back-card .card-tittle {
+    color: var(--first-color);
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-size: 15px;
+    background: rgba(0, 0, 0, 0.80);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5.0px);
+    -webkit-backdrop-filter: blur(5.0px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+figure .back-card hr {
+    height: 2px;
+    background: white;
+    border: none;
+    margin-bottom: 20px;
+}
+
+figure .back-card p {
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    line-height: 22px;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.80);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5.0px);
+    -webkit-backdrop-filter: blur(5.0px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+@media screen and (max-width: 768px) {
+
+    figure .back-card {
+        /*position: relative;*/
+        backface-visibility: visible;
+        transform: perspective(600px) rotateY(0deg);
+    }
+
+    .projects-content {
+        max-width: 1200px;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-container:hover figure {
+        transform: perspective(600px) rotateY(0deg);
+    }
 
     .portfolio-content {
         max-width: 1200px;
-        height: 450px;
+        height: auto;
         margin-top: 6rem;
         display: flex;
         flex-direction: column;
     }
 
-    .board {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 10% 1fr 1fr;
-        gap: 10px 10px;
-        grid-template-areas:
-            "my-projects my-projects my-projects my-projects"
-            "project-1 project-2 project-3 project-4"
-            "project-5 project-6 project-7 project-8";
-        text-align: center;
-    }
-
-    .my-projects {
-        grid-area: my-projects;
-        text-align: center;
-    }
-
-    .project-2 {
-        grid-area: project-2;
-    }
-
-    .project-1 {
-        grid-area: project-1;
-    }
-
-    .project-3 {
-        grid-area: project-3;
-    }
-
-    .project-4 {
-        grid-area: project-4;
-    }
-
-    .project-5 {
-        grid-area: project-5;
-    }
-
-    .project-6 {
-        grid-area: project-6;
-    }
-
-    .project-7 {
-        grid-area: project-7;
-    }
-
-    .project-8 {
-        grid-area: project-8;
+    .card-container:hover figure img {
+        filter: blur(5px);
     }
 
 }
+
 
 /* ---------------------------------------------- Profile Container CSS---------------------------------------------- */
 
@@ -657,4 +787,4 @@ loader-none img {
 
 }
 
-    /* ---------------------------------------------- Animations ---------------------------------------------- */
+/* ---------------------------------------------- Animations ---------------------------------------------- */
