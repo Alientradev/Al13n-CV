@@ -317,7 +317,7 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to left, #05081b, #1e314d, #2c5c86, #2d8bc2, #00bfff);
+    background-image: linear-gradient(to right, #b3b3b3, #909090, #6f6f6f, #505050, #323232); 
     gap: 20px;
 }
 
@@ -417,7 +417,7 @@ body::-webkit-scrollbar-thumb {
 .portfolio-content {
     margin: 40px 20px;
     padding: 10px;
-    margin-top: 5rem;
+    margin-top: 5rem; 
     background: rgba(0, 0, 0, 0.50);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(5.0px);
@@ -605,7 +605,6 @@ figure .back-card p {
     .portfolio-content {
         max-width: 1200px;
         height: auto;
-        margin-top: 6rem;
         display: flex;
         flex-direction: column;
     }
