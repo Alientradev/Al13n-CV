@@ -291,7 +291,6 @@ body::-webkit-scrollbar-thumb {
     background-image: url("/assets/hero-image-3.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     height: 100vh;
     width: 100%;
     z-index: -1;
