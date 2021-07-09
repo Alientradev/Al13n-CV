@@ -291,6 +291,7 @@ body::-webkit-scrollbar-thumb {
     background-image: url("/assets/hero-image-3.webp");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
     width: 100%;
     z-index: -1;
@@ -417,7 +418,7 @@ body::-webkit-scrollbar-thumb {
 .portfolio-content {
     margin: 40px 20px;
     padding: 10px;
-    margin-top: 5rem; 
+    margin-top: 5rem;
     background: rgba(0, 0, 0, 0.50);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(5.0px);
@@ -581,7 +582,64 @@ figure .back-card p {
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+
+    .projects-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3% 1fr 1fr 1fr 1fr;
+        gap: 10px 10px;
+        grid-template-areas:
+            "my-projects my-projects"
+            "project-1 project-2"
+            "project-3 project-4"
+            "project-5 project-6"
+            "project-7 project-8";
+    }
+
+    .project-2 {
+        grid-area: project-2;
+        text-align: center;
+    }
+
+    .project-3 {
+        grid-area: project-3;
+        text-align: center;
+    }
+
+    .project-4 {
+        grid-area: project-4;
+        text-align: center;
+    }
+
+    .project-5 {
+        grid-area: project-5;
+        text-align: center;
+    }
+
+    .project-6 {
+        grid-area: project-6;
+        text-align: center;
+    }
+
+    .project-7 {
+        grid-area: project-7;
+        text-align: center;
+    }
+
+    .project-8 {
+        grid-area: project-8;
+        text-align: center;
+    }
+
+    .project-1 {
+        grid-area: project-1;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 460px) {
 
     figure .back-card {
         /*position: relative;*/
