@@ -340,9 +340,8 @@ body::-webkit-scrollbar-thumb {
     /* Styles  */
     border-radius: 20px;
     background: #e0e0e0;
-    box-shadow:  15px 15px 22px #b5b5b5,
-             -15px -15px 22px #ffffff;
-
+    box-shadow:  15px 15px 40px #b5b5b5,
+             -15px -15px 40px #ffffff;
 }
 
 .profile-card {
@@ -435,8 +434,8 @@ body::-webkit-scrollbar-thumb {
     margin-top: 5rem;
     border-radius: 20px;
     background: #e0e0e0;
-    box-shadow:  15px 15px 22px #b5b5b5,
-             -15px -15px 22px #ffffff;
+    box-shadow:  15px 15px 40px #b5b5b5,
+             -15px -15px 40px #ffffff;
 }
 
 .projects-content {
@@ -736,8 +735,8 @@ figure .back-card p {
     margin-top: 5rem;
     border-radius: 20px;
     background: #e0e0e0;
-    box-shadow:  15px 15px 22px #b5b5b5,
-             -15px -15px 22px #ffffff;
+    box-shadow:  15px 15px 40px #b5b5b5,
+             -15px -15px 40px #ffffff;
 }
 
 .contact-form>* {
