@@ -326,7 +326,7 @@ body::-webkit-scrollbar-thumb {
 /* ---------------------------------------------- Profile Container CSS---------------------------------------------- */
 
 .profile-content {
-    margin: 35px 20px;
+    margin: 40px 20px;
     padding: 10px;
     display: grid;
     grid-auto-flow: row dense;
