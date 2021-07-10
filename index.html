@@ -86,7 +86,7 @@
 
         <section class="profile" id="profile">
             <div class="profile-content">
-                <article class="my-profile">
+                <article class="my-profile profile-card">
                     <aside>
                         <h2>Julian Casanova</h2>
                     </aside>
@@ -97,7 +97,7 @@
                         dispuesto a cumplir las metas propuestas.
                     </p>
                 </article>
-                <article class="education">
+                <article class="education profile-card">
                     <h3>Educación</h3>
                     <p>Soy tecnólogo en telecomunicaciones graduado en el Instituto Tecnológico Metropolitano de
                         Medellín, técnico en ingles con énfasis en sistemas del Politécnico Americano y actualmente
@@ -107,7 +107,7 @@
                     <p>Tengo mas de 4 años de experiencia en cargos de TI como analista de infraestructura y gestor en
                         servicios de tecnología para varias empresas en la ciudad de Medellín</p>
                 </article>
-                <article class="skills">
+                <article class="skills profile-card">
                     <h3>Habilidades</h3>
                     <p>Desarrollo Web Front End - Desarrollo de Software - Computación en la nube - Infraestructura de
                         TI - Seguridad informática - Bases de datos</p>
@@ -135,7 +135,7 @@
                     </aside>
 
 
-                    <div class="project-1">
+                    <div class="project-1 project-title-effect">
                         <h3>dlrsolucionestec.com.co</h3>
                         <div class="card-container ">
                             <a href="https://dlrsolucionestec.com.co/" target="_blank" rel="noopener">
@@ -151,7 +151,7 @@
                         </div>
                     </div>
 
-                    <div class="project-2">
+                    <div class="project-2 project-title-effect">
                         <h3>Proyecto 2</h3>
                         <div class="card-container ">
                             <a href="https://www.youtube.com/watch?v=Vz7iI5_YzWI" target="_blank" rel="noopener">
@@ -167,7 +167,7 @@
                         </div>
                     </div>
 
-                    <div class="project-3">
+                    <div class="project-3 project-title-effect">
                         <h3>Proyecto 3</h3>
                         <div class="card-container ">
                             <a href="https://www.youtube.com/watch?v=Vz7iI5_YzWI" target="_blank" rel="noopener">
@@ -183,7 +183,7 @@
                         </div>
                     </div>
 
-                    <div class="project-4">
+                    <div class="project-4 project-title-effect">
                         <h3>Proyecto 4</h3>
                         <div class="card-container ">
                             <a href="https://www.youtube.com/watch?v=Vz7iI5_YzWI" target="_blank" rel="noopener">
@@ -199,7 +199,7 @@
                         </div>
                     </div>
 
-                    <div class="project-5">
+                    <div class="project-5 project-title-effect">
                         <h3>Proyecto 5</h3>
                         <div class="card-container ">
                             <a href="https://www.youtube.com/watch?v=Vz7iI5_YzWI" target="_blank" rel="noopener">
@@ -215,7 +215,7 @@
                         </div>
                     </div>
 
-                    <div class="project-6">
+                    <div class="project-6 project-title-effect">
                         <h3>Proyecto 6</h3>
                         <div class="card-container ">
                             <a href="https://www.youtube.com/watch?v=Vz7iI5_YzWI" target="_blank" rel="noopener">
@@ -231,7 +231,7 @@
                         </div>
                     </div>
 
-                    <div class="project-7">
+                    <div class="project-7 project-title-effect">
                         <h3>Proyecto 7</h3>
                         <div class="card-container ">
                             <a href="https://www.youtube.com/watch?v=Vz7iI5_YzWI" target="_blank" rel="noopener">
@@ -247,7 +247,7 @@
                         </div>
                     </div>
 
-                    <div class="project-8">
+                    <div class="project-8 project-title-effect">
                         <h3>Proyecto 8</h3>
                         <div class="card-container ">
                             <a href="https://www.youtube.com/watch?v=Vz7iI5_YzWI" target="_blank" rel="noopener">
@@ -270,29 +270,30 @@
         <!-- contact -->
 
         <section class="contact full-screen" id="contact">
-            <div class="contact-content">
-                <form class="contact-form">
-                    <h2>Enviame un mensaje</h2>
-                    <input type="text" name="name" placeholder="Ingresa tu nombre *"
-                        title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
-                        required>
-                    <input type="email" name="email" placeholder="Ingresa tu correo *" title="Email incorrecto"
-                        pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
-                    <textarea name="comments" cols="50" rows="10" placeholder="Déjame tus comentarios *"
-                        required></textarea>
-                    <div class="contact-form-loader text-center none"> <img class="none" src=" assets/loader.svg"
-                            alt="Enviando...">
-                    </div>
-                    <input class="btn" type="submit" value="ENVIAR MENSAJE">
-                </form>
-                <article id="gracias" class="modal">
-                    <div class="modal-content">
-                        <article class="contact-form-response">
-                            <h3>Mensaje Enviando<br>¡Muchas Gracias!</h3>
-                        </article>
-                    </div>
-                </article>
-            </div>
+                <div class="contact-content">
+                    <form class="contact-form">
+                        <h2>Enviame un mensaje</h2>
+                        <input type="text" name="name" placeholder="Ingresa tu nombre *"
+                            title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                            required>
+                        <input type="email" name="email" placeholder="Ingresa tu correo *" title="Email incorrecto"
+                            pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                        <textarea name="comments" cols="50" rows="10" placeholder="Déjame tus comentarios *"
+                            required></textarea>
+                        <div class="contact-form-loader text-center none"> <img class="none" src=" assets/loader.svg"
+                                alt="Enviando...">
+                        </div>
+                        <input class="btn" type="submit" value="ENVIAR MENSAJE">
+                    </form>
+                    <article id="gracias" class="modal">
+                        <div class="modal-content">
+                            <article class="contact-form-response">
+                                <h3>Mensaje Enviando<br>¡Muchas Gracias!</h3>
+                            </article>
+                        </div>
+                    </article>
+                </div>
+            
         </section>
 
     </div>
