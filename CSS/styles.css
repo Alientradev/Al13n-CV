@@ -81,7 +81,7 @@ h3 {
 
 p {
     font-family: var(--text-font);
-    color: var(--white);
+    color: white;
     line-height: 1.6;
 }
 
@@ -656,6 +656,28 @@ figure .back-card p {
         grid-area: project-1;
         text-align: center;
     }
+
+    figure .back-card {
+        /*position: relative;*/
+        backface-visibility: visible;
+        transform: perspective(600px) rotateY(0deg);
+    }
+
+    .card-container:hover figure {
+        transform: perspective(600px) rotateY(0deg);
+    }
+
+    .portfolio-content {
+        max-width: 1200px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-container:hover figure img {
+        filter: blur(5px);
+    }
+
 
 }
 
