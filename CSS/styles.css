@@ -399,7 +399,7 @@ body::-webkit-scrollbar-thumb {
 
     .profile-content {
         max-width: 1200px;
-        margin-top: 6rem;
+        margin-top: 5rem;
         display: grid;
         grid-auto-flow: row dense;
         grid-template-columns: repeat(3, 1fr);
