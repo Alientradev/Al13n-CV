@@ -354,12 +354,17 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+
 .my-profile {
     grid-area: my-profile;
     text-align: center;
     border: thin solid var(--first-color);
     border-radius: 10px;
     padding: 10px;
+}
+
+.my-profile h2{
+    text-shadow: var(--text-Shadow);
 }
 
 .profile img {
@@ -454,18 +459,18 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
 }
 
-.project-title-effect {
-    background: rgba(0, 0, 0, 0.50);
+.project-titles h3{
+    background: rgba(0, 0, 0, 0.80);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(5.0px);
     -webkit-backdrop-filter: blur(5.0px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    border: thin solid var(--first-color);
 }
 
 .my-projects h2 {
     margin: 0 auto;
+    text-shadow: var(--text-Shadow);
 }
 
 .project-2 {
