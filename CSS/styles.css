@@ -44,7 +44,7 @@ body {
     padding: 0;
     overflow-x: hidden;
     color: var(--title-text-color);
-    background-color: #dedede;
+    background-color: #e0e0e0;
 }
 
 a {
@@ -339,9 +339,9 @@ body::-webkit-scrollbar-thumb {
         "skills";
     /* Styles  */
     border-radius: 20px;
-    background: linear-gradient(145deg, #c8c8c8, #eeeeee);
-    box-shadow: 12px 12px 31px #adadad,
-        -12px -12px 31px #ffffff;
+    background: #e0e0e0;
+    box-shadow:  15px 15px 22px #b5b5b5,
+             -15px -15px 22px #ffffff;
 
 }
 
@@ -434,10 +434,9 @@ body::-webkit-scrollbar-thumb {
     padding: 10px;
     margin-top: 5rem;
     border-radius: 20px;
-    border-radius: 20px;
-    background: linear-gradient(145deg, #c8c8c8, #eeeeee);
-    box-shadow: 12px 12px 31px #adadad,
-        -12px -12px 31px #ffffff;
+    background: #e0e0e0;
+    box-shadow:  15px 15px 22px #b5b5b5,
+             -15px -15px 22px #ffffff;
 }
 
 .projects-content {
@@ -736,10 +735,9 @@ figure .back-card p {
     max-width: var(--max-width);
     margin-top: 5rem;
     border-radius: 20px;
-    border-radius: 20px;
-    background: linear-gradient(145deg, #c8c8c8, #eeeeee);
-    box-shadow: 12px 12px 31px #adadad,
-        -12px -12px 31px #ffffff;
+    background: #e0e0e0;
+    box-shadow:  15px 15px 22px #b5b5b5,
+             -15px -15px 22px #ffffff;
 }
 
 .contact-form>* {
