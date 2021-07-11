@@ -44,7 +44,7 @@ body {
     padding: 0;
     overflow-x: hidden;
     color: var(--title-text-color);
-    background-color: #e0e0e0;
+    background-color: #dedede;
 }
 
 a {
@@ -339,9 +339,10 @@ body::-webkit-scrollbar-thumb {
         "skills";
     /* Styles  */
     border-radius: 20px;
-    background: linear-gradient(145deg, #cacaca, #f0f0f0);
-    box-shadow:  15px 15px 40px #b5b5b5,
-             -15px -15px 40px #ffffff;
+    background: linear-gradient(145deg, #c8c8c8, #eeeeee);
+    box-shadow: 12px 12px 31px #adadad,
+        -12px -12px 31px #ffffff;
+
 }
 
 .profile-card {
@@ -358,12 +359,16 @@ body::-webkit-scrollbar-thumb {
 .my-profile {
     grid-area: my-profile;
     text-align: center;
-    border: thin solid var(--first-color);
+    border-bottom: thin solid var(--first-color);
+    border-right: thin solid var(--first-color);
+    box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
+    -webkit-box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
     border-radius: 10px;
     padding: 10px;
 }
 
-.my-profile h2{
+.my-profile h2 {
     text-shadow: var(--text-Shadow);
 }
 
@@ -377,7 +382,11 @@ body::-webkit-scrollbar-thumb {
 .education {
     grid-area: education;
     text-align: center;
-    border: thin solid var(--first-color);
+    border-bottom: thin solid var(--first-color);
+    border-right: thin solid var(--first-color);
+    box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
+    -webkit-box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
     border-radius: 10px;
     padding: 10px;
 }
@@ -385,7 +394,11 @@ body::-webkit-scrollbar-thumb {
 .skills {
     grid-area: skills;
     text-align: center;
-    border: thin solid var(--first-color);
+    border-bottom: thin solid var(--first-color);
+    border-right: thin solid var(--first-color);
+    box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
+    -webkit-box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
     border-radius: 10px;
     padding: 10px;
 }
@@ -433,9 +446,10 @@ body::-webkit-scrollbar-thumb {
     padding: 10px;
     margin-top: 5rem;
     border-radius: 20px;
-    background: linear-gradient(145deg, #cacaca, #f0f0f0);
-    box-shadow:  15px 15px 40px #b5b5b5,
-             -15px -15px 40px #ffffff;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #c8c8c8, #eeeeee);
+    box-shadow: 12px 12px 31px #adadad,
+        -12px -12px 31px #ffffff;
 }
 
 .projects-content {
@@ -458,13 +472,15 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
 }
 
-.project-titles h3{
+.project-titles h3 {
     background: rgba(0, 0, 0, 0.80);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(5.0px);
     -webkit-backdrop-filter: blur(5.0px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
+    -webkit-box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
 }
 
 .my-projects h2 {
@@ -734,9 +750,10 @@ figure .back-card p {
     max-width: var(--max-width);
     margin-top: 5rem;
     border-radius: 20px;
-    background: linear-gradient(145deg, #cacaca, #f0f0f0);
-    box-shadow:  15px 15px 40px #b5b5b5,
-             -15px -15px 40px #ffffff;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #c8c8c8, #eeeeee);
+    box-shadow: 12px 12px 31px #adadad,
+        -12px -12px 31px #ffffff;
 }
 
 .contact-form>* {
@@ -753,11 +770,13 @@ figure .back-card p {
     font-family: var(--title-font);
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.70);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(10.0px);
     -webkit-backdrop-filter: blur(5.0px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
+    -webkit-box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
 }
 
 .contact-form input {
