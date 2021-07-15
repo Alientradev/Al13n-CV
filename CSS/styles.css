@@ -255,7 +255,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     height: var(--header-height);
     background: rgba(0, 0, 0, 0.70);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    box-shadow: 0 0px 30px 0 rgba(0, 191, 255, 0.50);
     backdrop-filter: blur(7.0px);
     -webkit-backdrop-filter: blur(5.0px);
 }
@@ -323,7 +323,7 @@ body::-webkit-scrollbar-thumb {
     gap: 20px;
 }
 
-/* ---------------------------------------------- Profile Container CSS---------------------------------------------- */
+/* ---------------------------------------------- Profile ---------------------------------------------- */
 
 .profile-content {
     margin: 40px 20px;
@@ -346,9 +346,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .profile-card {
-    margin: 10px;
     background: rgba(0, 0, 0, 0.50);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(5.0px);
     -webkit-backdrop-filter: blur(5.0px);
     border-radius: 10px;
@@ -359,16 +357,12 @@ body::-webkit-scrollbar-thumb {
 .my-profile {
     grid-area: my-profile;
     text-align: center;
-    border-bottom: thin solid var(--first-color);
-    border-right: thin solid var(--first-color);
-    box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
-    -webkit-box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
-    -moz-box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
+    border: thin solid var(--first-color);
     border-radius: 10px;
     padding: 10px;
 }
 
-.my-profile h2 {
+.my-profile h2{
     text-shadow: var(--text-Shadow);
 }
 
@@ -382,11 +376,7 @@ body::-webkit-scrollbar-thumb {
 .education {
     grid-area: education;
     text-align: center;
-    border-bottom: thin solid var(--first-color);
-    border-right: thin solid var(--first-color);
-    box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
-    -webkit-box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
-    -moz-box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
+    border: thin solid var(--first-color);
     border-radius: 10px;
     padding: 10px;
 }
@@ -394,24 +384,21 @@ body::-webkit-scrollbar-thumb {
 .skills {
     grid-area: skills;
     text-align: center;
-    border-bottom: thin solid var(--first-color);
-    border-right: thin solid var(--first-color);
-    box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
-    -webkit-box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
-    -moz-box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
+    border: thin solid var(--first-color);
     border-radius: 10px;
     padding: 10px;
 }
 
-.download-cv a {
-    margin: 10px;
+.skills a{
+    margin: 3px;
 }
+
 
 @media screen and (min-width: 1024px) {
 
     .profile-content {
         max-width: 1200px;
-        margin-top: 5rem;
+        margin-top: 6rem;
         display: grid;
         grid-auto-flow: row dense;
         grid-template-columns: repeat(3, 1fr);
@@ -472,15 +459,13 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
 }
 
-.project-titles h3 {
+.project-titles h3{
     background: rgba(0, 0, 0, 0.80);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(5.0px);
     -webkit-backdrop-filter: blur(5.0px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
-    -webkit-box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
-    -moz-box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
 }
 
 .my-projects h2 {
@@ -770,13 +755,11 @@ figure .back-card p {
     font-family: var(--title-font);
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.70);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(10.0px);
     -webkit-backdrop-filter: blur(5.0px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
-    -webkit-box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
-    -moz-box-shadow: 7px 4px 16px 1px rgba(0, 0, 0, 0.66);
 }
 
 .contact-form input {
