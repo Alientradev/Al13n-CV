@@ -1,0 +1,237 @@
+/* ----------------------------------------------Custom properties---------------------------------------------- */
+
+:root {
+    /* color palette  */
+    --first-color: #00BFFF;
+    --first-alpha-color: 0, 191, 255, 0.60;
+    --second-color: #03203E;
+    --second-alpha-color: 0, 206, 209, .60;
+    --third-color: #05081B;
+    --third-alpha-color: 5, 8, 27, 0.60;
+    --white: #FFFFFF;
+    --black: #000000;
+    /* fonts  */
+    --title-font: 'Zen Dots', cursive, sans-serif;
+    --text-font: 'Raleway', sans-serif;
+    /* Medidas */
+    --max-width: 1200px;
+    --header-height: 4rem;
+    /* Effects */
+    --box-Shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
+    --text-Shadow: 4px 3px 4px rgba(35, 15, 9, 0.86);
+    --glow: #03203E 0px 0px 10px;
+    --transitions: all 0.5s ease-out;
+}
+
+/* ----------------------------------------------Reset CCS---------------------------------------------- */
+
+a {
+    color: var(--white);
+    background-color: transparent;
+}
+
+
+h1 {
+    color: var(--first-color);
+}
+
+h2 {
+    color: var(--white);
+}
+
+h3 {
+    color: var(--white);
+}
+
+p {
+    color: var(--first-color);
+}
+
+/* ----------------------------------------------Utilities---------------------------------------------- */
+
+.btn {
+    color: var(--first-color);
+    background-color: var(--white);
+}
+
+.btn:hover {
+    color: var(--second-color);
+    background-color: var(--white);
+}
+
+/* ----------------------------------------------Syte Styles---------------------------------------------- */
+
+/*  Scroll Styles  */
+
+body::-webkit-scrollbar {
+    background: var(--first-color);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--third-color);
+}
+
+/* ---------------------------------------------- Menu ----------------------------------------------*/
+
+.menu-btn svg {
+    fill: var(--first-color);
+}
+
+.menu {
+    background-color: rgba(250, 250, 250, 0.7);
+}
+
+.menu a {
+    color: var(--second-color);
+}
+
+.menu a:hover {
+    color: var(--first-color);
+    text-shadow: var(--glow);
+}
+
+/* --- Menu Media Queries--- */
+
+@media screen and (min-width: 1024px) {
+
+    .header {
+        -webkit-box-shadow: 0px 1px 15px 5px rgba(0, 0, 0, 0.92);
+        box-shadow: 0px 1px 15px 5px rgba(0, 0, 0, 0.92);
+    }
+
+    .menu {
+        background-color: transparent;
+    }
+
+    .menu a {
+        color: var(--third-color);
+        background-color: transparent;
+    }
+
+    .menu a:hover {
+        background-color: transparent;
+        color: var(--first-color);
+    }
+
+}
+
+/* ---------------------------------------------- Header CSS---------------------------------------------- */
+
+.header {
+    background: rgba(250, 250, 250, 0.7);
+    /* box-shadow: 0 0px 30px 0 rgba(209, 209, 209, 0.5); */
+    backdrop-filter: blur(7.0px);
+    -webkit-backdrop-filter: blur(5.0px);
+}
+
+.logo:hover {
+    filter: drop-shadow(var(--glow));
+}
+
+/* ---------------------------------------------- Home hero Image CSS---------------------------------------------- */
+
+#particles-js {
+    background-image: url("/assets/dark-hero-image.webp");
+}
+
+.home-content a {
+    color: var(--first-color);
+}
+
+/* ----------------------------------------------Sidebar----------------------------------------------  */
+
+.sidebar {
+    background: rgba(252, 252, 252, 0.75);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.0px);
+    -webkit-backdrop-filter: blur(8.0px);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* ---------------------------------------------- Web Container CSS---------------------------------------------- */
+
+.web-container {
+    background-color: var(--second-color);
+}
+
+/* ---------------------------------------------- Profile ---------------------------------------------- */
+
+.profile-content {
+    background: linear-gradient(145deg, #031d38, #032242);
+    box-shadow: 21px 21px 46px #021428,
+        -21px -21px 46px #042c54;
+}
+
+.profile-card {
+    background: rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(5.0px);
+    -webkit-backdrop-filter: blur(5.0px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+
+.my-profile {
+    border: thin solid var(--first-color);
+}
+
+.profile img {
+    border: thin solid var(--first-color);
+}
+
+.education {
+    border: thin solid var(--first-color);
+}
+
+.skills {
+    border: thin solid var(--first-color);
+}
+
+/* ---------------------------------------------- Portfolio Container CSS---------------------------------------------- */
+
+.portfolio-content {
+    background: linear-gradient(145deg, #031d38, #032242);
+    box-shadow: 21px 21px 46px #021428,
+        -21px -21px 46px #042c54;
+}
+
+.project-titles h3 {
+    background: rgba(0, 0, 0, 0.80);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5.0px);
+    -webkit-backdrop-filter: blur(5.0px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* ---------------------------------------------- Contact Container CSS---------------------------------------------- */
+
+.contact-form {
+    background: linear-gradient(145deg, #031d38, #032242);
+    box-shadow: 21px 21px 46px #021428,
+        -21px -21px 46px #042c54;
+}
+
+/* ---------------------------------------------- Footer ---------------------------------------------- */
+
+@media screen and (min-width: 1024px) {
+
+    .footer {
+        background: rgba(250, 250, 250, 0.7);
+        /* box-shadow: 0 0px 30px 0 rgba(209, 209, 209, 0.5); */
+        backdrop-filter: blur(7.0px);
+        -webkit-backdrop-filter: blur(5.0px);
+    }
+
+    .footer a {
+        color: transparent;
+    }
+
+    .footer a:hover {
+        color: #000000;
+    }
+
+    .footer h3 {
+        color: #000000;
+    }
+
+}

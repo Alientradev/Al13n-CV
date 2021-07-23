@@ -11,7 +11,6 @@
     --white: #FFFFFF;
     --black: #000000;
     /* fonts  */
-    --title-text-color: ;
     --title-font: 'Zen Dots', cursive, sans-serif;
     --text-font: 'Raleway', sans-serif;
     /* Medidas */
@@ -43,45 +42,33 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    color: var(--title-text-color);
-    background-color: #dedede;
 }
 
 a {
-    color: var(--white);
     transition: var(--transitions);
     text-decoration: none;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
 }
 
 h1 {
     margin: 0;
     font-size: 2rem;
     font-family: var(--title-font);
-    color: var(--white);
 }
 
 h2 {
     margin: 0;
     font-size: 1.5rem;
     font-family: var(--title-font);
-    color: var(--first-color);
 }
 
 h3 {
     margin: 0;
     font-size: 1rem;
     font-family: var(--title-font);
-    color: var(--first-color);
 }
 
 p {
     font-family: var(--text-font);
-    color: white;
     line-height: 1.6;
 }
 
@@ -94,15 +81,13 @@ p {
     width: 200px;
     font-weight: bold;
     text-align: center;
-    color: var(--white);
-    background-color: var(--first-color);
     font-family: var(--title-font);
 }
 
-.btn:hover {
+/* .btn:hover {
     color: var(--second-color);
     background-color: var(--white);
-}
+} */
 
 .none {
     display: none;
@@ -119,11 +104,9 @@ p {
 
 body::-webkit-scrollbar {
     width: 8px;
-    background: var(--third-color);
 }
 
 body::-webkit-scrollbar-thumb {
-    background: var(--first-color);
     border-radius: 5px;
 }
 
@@ -158,9 +141,9 @@ body::-webkit-scrollbar-thumb {
 
 /* ---------------------------------------------- Menu ----------------------------------------------*/
 
-.menu-btn svg {
+/* .menu-btn svg {
     fill: var(--first-color);
-}
+} */
 
 .menu {
     position: fixed;
@@ -169,7 +152,6 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.90);
     opacity: 0;
     transition: opacity 0.5s ease;
     pointer-events: none;
@@ -186,24 +168,22 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
-    color: var(--first-color);
 }
 
-.menu a:hover {
+/* .menu a:hover {
     color: var(--white);
     text-shadow: var(--glow);
-}
+} */
 
 /* --- Menu Media Queries--- */
 
 @media screen and (min-width: 1024px) {
+
     .header {
         position: sticky;
         top: 0;
         padding: 0.5rem;
         height: calc(var(--header-height)-0.5rem);
-        -webkit-box-shadow: 0px 1px 15px 5px rgba(0, 0, 0, 0.92);
-        box-shadow: 0px 1px 15px 5px rgba(0, 0, 0, 0.92);
     }
 
     .header-container {
@@ -221,10 +201,11 @@ body::-webkit-scrollbar-thumb {
         flex-direction: row;
         opacity: 1;
         pointer-events: auto;
-        background-color: transparent;
+        background-color: transparent; 
     }
 
     .menu a {
+        background-color: transparent;
         padding: 0 1rem;
     }
 
@@ -234,14 +215,8 @@ body::-webkit-scrollbar-thumb {
 
     .menu a:hover {
         background-color: transparent;
-        color: var(--white);
     }
 
-    .hero-image-tittle {
-        text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.99);
-        font-size: 3vw;
-        color: var(--first-color);
-    }
 }
 
 /* ---------------------------------------------- Header CSS---------------------------------------------- */
@@ -254,10 +229,6 @@ body::-webkit-scrollbar-thumb {
     padding: .5rem 1rem .5rem 1rem;
     width: 100%;
     height: var(--header-height);
-    background: rgba(0, 0, 0, 0.70);
-    box-shadow: 0 0px 30px 0 rgba(0, 191, 255, 0.50);
-    backdrop-filter: blur(7.0px);
-    -webkit-backdrop-filter: blur(5.0px);
 }
 
 .header>.header-container {
@@ -272,7 +243,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .logo:hover {
-    filter: drop-shadow(var(--glow));
     transition: var(--transitions);
 }
 
@@ -289,7 +259,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 #particles-js {
-    background-image: url("/assets/hero-image-3.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -319,9 +288,111 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #cfcfcf;
     gap: 20px;
 }
+
+
+/* ----------------------------------------------Sidebar----------------------------------------------  */
+
+.sidebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    z-index: 990;
+    top: 40%;
+    right: 5px;
+    border-radius: 5px;
+}
+
+.language{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar h3{
+    margin: 5px;
+}
+
+.check{
+    position: relative;
+    width: 40px;
+}
+
+.check:before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 15px;
+    background: #333;
+    border-radius: 25px;
+}
+
+.check:after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: thin solid #333;
+    box-sizing: border-box;
+}
+
+.check:checked::after{
+    left: 20px; 
+    border: thin solid var(--first-color);
+}
+
+.check:checked::before{
+    background: var(--first-color);
+}
+
+.light{
+    cursor: pointer;
+}
+
+.dark{
+    cursor: pointer;
+}
+
+.retro{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .sidebar-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        top: 0;
+        right: auto;   
+    }
+    
+    .change-theme {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .language{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
 
 /* ---------------------------------------------- Profile ---------------------------------------------- */
 
@@ -339,25 +410,16 @@ body::-webkit-scrollbar-thumb {
         "skills";
     /* Styles  */
     border-radius: 20px;
-    background: linear-gradient(145deg, #c8c8c8, #eeeeee);
-    box-shadow: 12px 12px 31px #adadad,
-        -12px -12px 31px #ffffff;
-
 }
 
 .profile-card {
-    background: rgba(0, 0, 0, 0.50);
-    backdrop-filter: blur(5.0px);
-    -webkit-backdrop-filter: blur(5.0px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 
 .my-profile {
     grid-area: my-profile;
     text-align: center;
-    border: thin solid var(--first-color);
     border-radius: 10px;
     padding: 10px;
 }
@@ -369,14 +431,12 @@ body::-webkit-scrollbar-thumb {
 .profile img {
     margin: 10px;
     border-radius: 50%;
-    border: thin solid var(--first-color);
     /* border-radius: 10px; */
 }
 
 .education {
     grid-area: education;
     text-align: center;
-    border: thin solid var(--first-color);
     border-radius: 10px;
     padding: 10px;
 }
@@ -384,7 +444,6 @@ body::-webkit-scrollbar-thumb {
 .skills {
     grid-area: skills;
     text-align: center;
-    border: thin solid var(--first-color);
     border-radius: 10px;
     padding: 10px;
 }
@@ -426,17 +485,22 @@ body::-webkit-scrollbar-thumb {
 
 }
 
+@media screen and (max-width: 460px) {
+
+    .profile-content {
+        margin-top: 2.5rem;
+    }
+
+}
+
 /* ---------------------------------------------- Portfolio Container CSS---------------------------------------------- */
 
 .portfolio-content {
     margin: 40px 20px;
     padding: 10px;
-    margin-top: 5rem;
+    margin-top: 6rem;
     border-radius: 20px;
     border-radius: 20px;
-    background: linear-gradient(145deg, #c8c8c8, #eeeeee);
-    box-shadow: 12px 12px 31px #adadad,
-        -12px -12px 31px #ffffff;
 }
 
 .projects-content {
@@ -460,12 +524,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .project-titles h3{
-    background: rgba(0, 0, 0, 0.80);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(5.0px);
-    -webkit-backdrop-filter: blur(5.0px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .my-projects h2 {
@@ -688,6 +747,10 @@ figure .back-card p {
 
 @media screen and (max-width: 460px) {
 
+    .portfolio-content {
+        margin-top: 2.5rem;
+    }
+
     figure .back-card {
         /*position: relative;*/
         backface-visibility: visible;
@@ -721,7 +784,7 @@ figure .back-card p {
 }
 
 
-/* ---------------------------------------------- Profile Container CSS---------------------------------------------- */
+/* ---------------------------------------------- Contact Container CSS---------------------------------------------- */
 
 .contact {
     display: flex;
@@ -735,10 +798,6 @@ figure .back-card p {
     max-width: var(--max-width);
     margin-top: 5rem;
     border-radius: 20px;
-    border-radius: 20px;
-    background: linear-gradient(145deg, #c8c8c8, #eeeeee);
-    box-shadow: 12px 12px 31px #adadad,
-        -12px -12px 31px #ffffff;
 }
 
 .contact-form>* {
@@ -883,14 +942,6 @@ loader-none img {
         -webkit-backdrop-filter: blur(5.0px);
         display: flex;
         justify-content: center;
-    }
-
-    .footer a {
-        color: transparent;
-    }
-
-    .footer a:hover {
-        color: var(--white);
     }
 
 }
