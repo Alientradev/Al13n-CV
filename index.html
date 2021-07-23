@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 
@@ -16,7 +16,8 @@
     <!-- Favicon  -->
     <link rel="shortcut icon" href="assets/logo.png">
     <!-- CSS  -->
-    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/styles.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="/CSS/light.css">
     <!-- Metas  -->
     <title>Julian Casanova</title>
     <link rel="favicon" href="https://juliancasanova.netlify.app/assets/AlienTraDev.png">
@@ -53,7 +54,6 @@
                         fill="rgba(66,188,243,1)" /></svg>
             </button>
             <nav class="menu">
-                <a href="#home">Inicio</a>
                 <a href="#profile">Perfil</a>
                 <a href="#portfolio">Portafolio</a>
                 <a href="#contact">Contactame</a>
@@ -75,6 +75,32 @@
     </div>
 
     <div class="web-container">
+
+        <div class="sidebar-container">
+            <div class="sidebar">
+
+                <div class="change-theme">
+                    <div class="light" id="light" onclick="lightOn()">
+                        ☀️
+                    </div>
+                    <div class="dark" id="dark" onclick="darkOn()">
+                        🌑
+                    </div>
+                    <div class="retro" id="retro" onclick="retroOn()">
+                        👾
+                    </div>
+                </div>
+
+                <div class="language">
+                    <h3 class="es">ES</h3>
+                    <div>
+                        <input type="checkbox" class="check">
+                    </div>
+                    
+                    <h3 class="en">EN</h3>
+                </div>
+            </div>
+        </div>
 
         <!-- profile -->
 
@@ -298,7 +324,7 @@
 
     <footer class="footer">
         <small>
-            <h3>This website was designed on planet earth with ❤️ by Julian 👽</h3>
+            <h3>Diseñado en el planeta tierra con ❤️ por Julian 👽</h3>
         </small>
         <a href="https://www.youtube.com/watch?v=kHCn5h4_dh0&list=PLUja9J5M1XReqoBal5IKog_PWz2Q_hZ7Y" target="_blank"
             rel="noopener">Click!</a>
