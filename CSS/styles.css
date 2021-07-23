@@ -306,15 +306,15 @@ body::-webkit-scrollbar-thumb {
     border-radius: 5px;
 }
 
+.sidebar div{
+    margin: 2px;
+}
+
 .language{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.sidebar h3{
-    margin: 5px;
 }
 
 .check{
@@ -353,15 +353,34 @@ body::-webkit-scrollbar-thumb {
 }
 
 .light{
+    padding: 5px;
     cursor: pointer;
 }
 
 .dark{
+    padding: 5px;
     cursor: pointer;
 }
 
 .retro{
+    padding: 5px;
     cursor: pointer;
+}
+
+.esp img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 15px;
+}
+
+.eng img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 15px;
 }
 
 

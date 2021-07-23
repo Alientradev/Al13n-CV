@@ -144,12 +144,40 @@ body::-webkit-scrollbar-thumb {
 /* ----------------------------------------------Sidebar----------------------------------------------  */
 
 .sidebar {
-    background: rgba(0, 0, 0, 0.75);
+    /* background: rgba(0, 39, 123, 0.4);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(8.0px);
     -webkit-backdrop-filter: blur(8.0px);
     border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.18); */
+}
+
+.language{
+    border: thin solid var(--first-color);
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(5.0px);
+    -webkit-backdrop-filter: blur(5.0px);
+}
+
+.check:hover{
+    filter: drop-shadow(var(--glow));
+    transition: .5s ease-in-out;
+}
+
+.light:hover{
+    filter: drop-shadow(var(--glow));
+    transition: .5s ease-in-out;
+}
+
+.dark:hover{
+    filter: drop-shadow(var(--glow));
+    transition: .5s ease-in-out;
+}
+
+.retro:hover{
+    filter: drop-shadow(var(--glow));
+    transition: .5s ease-in-out;
 }
 
 /* ---------------------------------------------- Web Container CSS---------------------------------------------- */
