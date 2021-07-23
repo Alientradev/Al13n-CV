@@ -26,7 +26,7 @@
 /* ----------------------------------------------Reset CCS---------------------------------------------- */
 
 a {
-    color: #FFFF02;
+    color: #dada00;
     background-color: transparent;
 }
 
@@ -36,11 +36,11 @@ h1 {
 }
 
 h2 {
-    color: #FFFF02;
+    color: #dada00;
 }
 
 h3 {
-    color: #FFFF02;
+    color: #dada00;
 }
 
 p {
@@ -55,7 +55,7 @@ p {
 }
 
 .btn:hover {
-    color: #FFFF02;
+    color: #dada00;
     background-color: #ff00f7;
 }
 
@@ -82,7 +82,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .menu a {
-    color: #FFFF02;
+    color: #dada00;
 }
 
 .menu a:hover {
@@ -120,7 +120,7 @@ body::-webkit-scrollbar-thumb {
 /* ---------------------------------------------- Header CSS---------------------------------------------- */
 
 .header {
-    background: rgba(0, 191, 255, 0.75);
+    background: rgba(0, 39, 123, 0.4);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(10.5px);
     -webkit-backdrop-filter: blur(10.5px);
@@ -224,7 +224,7 @@ body::-webkit-scrollbar-thumb {
 @media screen and (min-width: 1024px) {
 
     .footer {
-        background: rgba(0, 191, 255, 0.75);
+        background: rgba(0, 39, 123, 0.4);
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
         backdrop-filter: blur(10.5px);
         -webkit-backdrop-filter: blur(10.5px);
