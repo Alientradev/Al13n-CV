@@ -138,7 +138,7 @@ body::-webkit-scrollbar-thumb {
 /* ---------------------------------------------- Home hero Image CSS---------------------------------------------- */
 
 #particles-js {
-    background-image: url("/assets/retro-hero-image.webp");
+    background-image: url("/assets/retro-hero-image-1.webp");
 }
 
 /* ----------------------------------------------Sidebar----------------------------------------------  */
@@ -155,7 +155,7 @@ body::-webkit-scrollbar-thumb {
 /* ---------------------------------------------- Web Container CSS---------------------------------------------- */
 
 .web-container {
-    background-image: url("/assets/retro-hero-image-1.webp");
+    background-image: url("/assets/retro-hero-image.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
