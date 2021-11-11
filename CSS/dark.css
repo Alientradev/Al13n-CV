@@ -1,0 +1,270 @@
+/* ----------------------------------------------Custom properties---------------------------------------------- */
+
+:root {
+    /* color palette  */
+    --first-color: #00BFFF;
+    --first-alpha-color: 0, 191, 255, 0.60;
+    --second-color: #03203E;
+    --second-alpha-color: 0, 206, 209, .60;
+    --third-color: #05081B;
+    --third-alpha-color: 5, 8, 27, 0.60;
+    --white: #FFFFFF;
+    --black: #000000;
+    /* fonts  */
+    --title-font: 'Zen Dots', cursive, sans-serif;
+    --text-font: 'Raleway', sans-serif;
+    /* Medidas */
+    --max-width: 1200px;
+    --header-height: 4rem;
+    /* Effects */
+    --box-Shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
+    --text-Shadow: 4px 3px 4px rgba(35, 15, 9, 0.86);
+    --glow: #FFF 0px 0px 10px;
+    --transitions: all 0.5s ease-out;
+}
+
+/* ----------------------------------------------Reset CCS---------------------------------------------- */
+
+
+body {
+    background-color: #dedede;
+}
+
+a {
+    color: var(--white);
+}
+
+
+h1 {
+    color: var(--white);
+}
+
+h2 {
+    color: var(--first-color);
+}
+
+h3 {
+    color: var(--first-color);
+}
+
+p {
+    color: white;
+}
+
+/* ----------------------------------------------Utilities---------------------------------------------- */
+
+.btn {
+    color: var(--white);
+    background-color: var(--first-color);
+}
+
+.btn:hover {
+    color: var(--second-color);
+    background-color: var(--white);
+}
+
+/* ----------------------------------------------Syte Styles---------------------------------------------- */
+
+/*  Scroll Styles  */
+
+body::-webkit-scrollbar {
+    background: var(--third-color);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--first-color);
+}
+
+/* ---------------------------------------------- Menu ----------------------------------------------*/
+
+.menu-btn svg {
+    fill: var(--first-color);
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.90);
+}
+
+
+.menu a {
+    color: var(--first-color);
+}
+
+.menu a:hover {
+    color: var(--white);
+    text-shadow: var(--glow);
+}
+
+/* --- Menu Media Queries--- */
+
+@media screen and (min-width: 1024px) {
+
+    .header {
+        -webkit-box-shadow: 0px 1px 15px 5px rgba(0, 0, 0, 0.92);
+        box-shadow: 0px 1px 15px 5px rgba(0, 0, 0, 0.92);
+    }
+
+    .menu{
+        background-color: transparent;
+    }
+
+    .menu a {
+        background-color: transparent;
+        padding: 1rem;
+    }
+
+    .menu a:hover {
+        background-color: transparent;
+        color: var(--white);
+    }
+}
+
+/* ---------------------------------------------- Header CSS---------------------------------------------- */
+
+.header {
+    background: rgba(0, 0, 0, 0.40);
+    box-shadow: 0 0px 30px 0 rgba(0, 191, 255, 0.50);
+    backdrop-filter: blur(7.0px);
+    -webkit-backdrop-filter: blur(5.0px);
+}
+
+.logo:hover {
+    filter: drop-shadow(var(--glow));
+}
+
+/* ---------------------------------------------- Header CSS---------------------------------------------- */
+
+.header{
+    background: rgba(0, 0, 0, 0.70);
+    box-shadow: 0 0px 30px 0 rgba(0, 191, 255, 0.50);
+    backdrop-filter: blur(7.0px);
+    -webkit-backdrop-filter: blur(5.0px);
+}
+
+/* ---------------------------------------------- Home hero Image CSS---------------------------------------------- */
+
+#particles-js {
+    background-image: url("/assets/hero-image-3.webp");
+}
+
+/* ----------------------------------------------Sidebar----------------------------------------------  */
+
+.sidebar {
+    /* background: rgba(77, 53, 53, 0);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.0px);
+    -webkit-backdrop-filter: blur(8.0px);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18); */
+}
+
+.language{
+    border: thin solid var(--first-color);
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(5.0px);
+    -webkit-backdrop-filter: blur(5.0px);
+}
+
+.check:hover{
+    filter: drop-shadow(var(--glow));
+    transition: .5s ease-in-out;
+}
+
+.light:hover{
+    filter: drop-shadow(var(--glow));
+    transition: .5s ease-in-out;
+}
+
+.dark:hover{
+    filter: drop-shadow(var(--glow));
+    transition: .5s ease-in-out;
+}
+
+.retro:hover{
+    filter: drop-shadow(var(--glow));
+    transition: .5s ease-in-out;
+}
+
+/* ---------------------------------------------- Web Container CSS---------------------------------------------- */
+
+.web-container {
+    background-color: #cfcfcf;
+}
+
+/* ---------------------------------------------- Profile ---------------------------------------------- */
+
+.profile-content {
+    background: linear-gradient(145deg, #c8c8c8, #eeeeee);
+    box-shadow: 12px 12px 31px #adadad,
+        -12px -12px 31px #ffffff;
+}
+
+.profile-card {
+    background: rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(5.0px);
+    -webkit-backdrop-filter: blur(5.0px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+
+.my-profile {
+    border: thin solid var(--first-color);
+}
+
+.profile img {
+    border: thin solid var(--first-color);
+}
+
+.education {
+    border: thin solid var(--first-color);
+}
+
+.skills {
+    border: thin solid var(--first-color);
+}
+
+/* ---------------------------------------------- Portfolio Container CSS---------------------------------------------- */
+
+.portfolio-content {
+    background: linear-gradient(145deg, #c8c8c8, #eeeeee);
+    box-shadow: 12px 12px 31px #adadad,
+        -12px -12px 31px #ffffff;
+}
+
+.project-titles h3{
+    background: rgba(0, 0, 0, 0.80);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5.0px);
+    -webkit-backdrop-filter: blur(5.0px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* ---------------------------------------------- Contact Container CSS---------------------------------------------- */
+
+.contact-form {
+    background: linear-gradient(145deg, #c8c8c8, #eeeeee);
+    box-shadow: 12px 12px 31px #adadad,
+        -12px -12px 31px #ffffff;
+}
+
+/* ---------------------------------------------- Footer ---------------------------------------------- */
+
+@media screen and (min-width: 1024px) {
+
+    .footer {
+        background: rgba(0, 0, 0, 0.70);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(7.0px);
+        -webkit-backdrop-filter: blur(5.0px);
+    }
+
+    .footer a {
+        color: transparent;
+    }
+
+    .footer a:hover {
+        color: var(--white);
+    }
+
+}
