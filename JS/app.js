@@ -19,37 +19,6 @@
     });
 })(document);
 
-/* --- Check Languages --- */
-
-let check = document.querySelector(".check")
-
-check.addEventListener('click', idioma);
-
-function idioma() {
-    let id = check.checked;
-    if (id === true) {
-        location.href = "EN/index.html"
-    } else {
-        location.href = "../index.html"
-    }
-}
-
-/* --- Change Theme --- */
-
-function lightOn(){
-    let element = document.getElementById("theme");
-    element.href = "/CSS/light.css"
- }
-
- function darkOn(){
-    let element = document.getElementById("theme");
-    element.href = "/CSS/dark.css"
- }
-
- function retroOn(){
-    let element = document.getElementById("theme");
-    element.href = "/CSS/retro.css"
- }
 
 /* --- Contact Form --- */
 
