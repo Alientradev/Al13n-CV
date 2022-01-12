@@ -7,19 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Fonts  -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://allfont.es/allfont.css?fonts=nasalization-free" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <!-- Favicon  -->
-    <link rel="shortcut icon" href="assets/logo.png">
+    <link rel="shortcut icon" href="assets/logo.webp">
     <!-- CSS  -->
     <link rel="stylesheet" type="text/css" href="/CSS/styles.css">
-    <link id="theme" rel="stylesheet" type="text/css" href="/CSS/dark.css">
     <!-- Metas  -->
-    <title>Julian Casanova</title>
+    <title>Julian Casanova - Developer</title>
     <link rel="favicon" href="https://juliancasanova.netlify.app/assets/AlienTraDev.png">
     <meta name="description" content="Bienvenidos a mi portafolio y curriculum web, soy Julian Casanova, desarrollador web Front End">
     <link rel="apple-touch-icon" href="https://juliancasanova.netlify.app/assets/AlienTraDev.png">
@@ -40,7 +40,7 @@
         <section class="header-container">
             <div class="logo">
                 <a href="#home">
-                    <img src="./assets/logo.png" alt="Logo Alientradev">
+                    <img src="./assets/logo.webp" alt="Logo Alientradev">
                 </a>
             </div>
             <button class="menu-btn">
@@ -54,9 +54,11 @@
                         fill="rgba(66,188,243,1)" /></svg>
             </button>
             <nav class="menu">
-                <a href="#profile">Perfil</a>
-                <a href="#portfolio">Portafolio</a>
-                <a href="#contact">Contactame</a>
+                <a href="#profile">PERFIL</a>
+                <a href="#education">EDUCACIÓN</a>
+                <a href="#skills">HABILIDADES</a>
+                <a href="#portfolio">PORTAFOLIO</a>
+                <a href="#contact">CONTACTO</a>
             </nav>
         </section>
     </header>
@@ -64,12 +66,15 @@
     <div id="home">
         <div class="home full-screen" id="particles-js">
             <div class="home-content">
-                <h1>
+                <h1>JULIAN CASANOVA</h1>
+                <H2>FRONT END DEV</H2>
+                <h2>
                     <a href="#home" class="typewrite" data-period="2000"
-                        data-type='[ "Julian Casanova", "Desarrollador Frontend", "Bienvenid@s" ]'>
+                        data-type='[ "HTML & CSS", "JS & TS", "ANGULAR"]'>
                         <span class="wrap"></span>
                     </a>
-                </h1>
+                </h2>
+                <h2>BIENVENID@S</h2>
             </div>
         </div>
     </div>
@@ -80,86 +85,356 @@
 
         <section class="profile" id="profile">
             <div class="profile-content">
-                <article class="my-profile profile-card">
-                    <aside>
-                        <h2>Julian Casanova</h2>
-                    </aside>
-                    <img src="./assets/photo.webp" alt="Foto de Perfil">
-                    <p>Soy una persona apasionada por la tecnología con experiencia como analista informático, con muy
-                        buena actitud y deseos de aprender para seguir creciendo profesionalmente, capacitado para
-                        analizar y adaptar las tecnologías de la información a los requerimientos actuales, siempre
-                        dispuesto a cumplir las metas propuestas.
-                    </p>
-                </article>
-                <article class="education profile-card">
-                    <h3>Educación</h3>
-                    <p>Soy tecnólogo en telecomunicaciones graduado en el Instituto Tecnológico Metropolitano de
-                        Medellín, técnico en ingles con énfasis en sistemas del Politécnico Americano y actualmente
-                        estudiante de tercer semestre de tecnología en desarrollo de software en la Fundación
-                        Universitaria Católica del Norte.</p>
-                    <h3>Experiencia</h3>
-                    <p>Tengo mas de 4 años de experiencia en cargos de TI como analista de infraestructura y gestor en
-                        servicios de tecnología para varias empresas en la ciudad de Medellín</p>
-                </article>
-                <article class="skills profile-card">
-                    <h3>Habilidades</h3>
-                    <p>Desarrollo Frontend Angular - Desarrollo de Apps iOS y Andriod en Flutter (En proceso) - Computación en la nube - Infraestructura de
-                        TI - Seguridad informática - Bases de datos</p>
-                    <h3>Hobbies</h3>
-                    <p>Mis actividades favoritas son leer, principalmente generos como distopia o ciencia ficción,
-                        escuchar musica Rock y Blues, jugar videojuegos, viajar y recorrer caminos en moto.</p>
-                    <a class="linkedin btn" href="https://www.linkedin.com/in/julicape/" target="blank"
-                        rel="noopener">Visita mi Linkedin</a>
-                    <a class="linkedin btn" href="https://github.com/Alientradev" target="blank"
-                        rel="noopener">Visita mi Github</a>
-                    <div class="download-cv">
-                        <a class="btn" href="assets/JulianCasanovaCV.pdf" target="_blank" rel="noopener">Descarga Mi CV</a>
+                <div class="my-profile profile-card">
+                    <div class="profile-card-pic flex-c">
+                        <h2>JULIAN CASANOVA</h2>
+                        <h2 class="title-frontend">Desarrollador Front End</h2>
+                        <img src="./assets/photo.webp" alt="Foto de Perfil">
                     </div>
-                </article>
+                    <div class="profile-card-tex flex">
+                        <p>Soy una persona apasionada por la tecnología con experiencia como analista de sistemas, con muy buena actitud y deseos de aprender para seguir creciendo profesionalmente, capacitado para analizar y adaptar las tecnologías de la información a los requerimientos actuales, siempre dispuesto a cumplir las metas propuestas</p>
+                    </div>
+                    <div class="profile-card-hob flex-c">
+                        <h2>HOBBIES</h2>
+                        <p>Mis actividades favoritas son leer, principalmente géneros como distopia o ciencia ficción, escuchar música Rock y Blues, jugar videojuegos, viajar y conocer pueblos en moto</p>
+                        </p>
+                        <div class="download-cv">
+                            <a class="btn" href="assets/JulianCasanovaCV.pdf" target="_blank" rel="noopener">Descarga Mi CV</a>
+                        </div>
+                        <a class="btn" href="https://www.linkedin.com/in/julicape/" target="blank"
+                        rel="noopener">Visita mi Linkedin</a>
+                        <a class="btn" href="https://github.com/Alientradev" target="blank"
+                        rel="noopener">Visita mi Github</a>
+                    </div>    
+                </div>
             </div>
         </section>
 
+        <!-- Education -->
+
+        <section class="profile" id="education">
+            <div class="profile-content">
+                <div class="education profile-card">
+                    <div class="education-card-tex flex-c">
+                        <h2>EDUCACIÓN</h2>
+                        <p> Soy tecnólogo en telecomunicaciones del Instituto Tecnológico Metropolitano, técnico en ingles con énfasis en sistemas del Politécnico Americano y estudiante de 3er semestre de tecnología en desarrollo de software en la F.U. Católica del Norte</p>
+                        <div class="fucn">
+                            <h4>Fundación Universitaria Católica del Norte</h4>
+                            <p>Tecnología en Desarrollo de Software</p>
+                            <p>En proceso</p>
+                        </div>
+                        <div class="itm">
+                            <h4>Instituto Tecnológico Metropolitano</h4>
+                            <p>Tecnología en Telecomunicaciones</p>
+                            <p>Graduado 2015</p>
+                        </div>
+                        <div class="poli">
+                            <h4>Politécnico Americano</h4>
+                            <p>Técnico en ingles con énfasis en sistemas</p>
+                            <p>Graduado 2007</p>
+                        </div>
+                    </div>
+                    <div class="experience-card-tex flex-c">
+                        <h2>EXPERIENCIA</h2>
+                        <p>Tengo más de 4 años de experiencia en cargos de TI como analista de infraestructura y gestor en servicios de tecnología para varias empresas en la ciudad de Medellín</p>
+                        <div class="sura">
+                            <h4>Arus - Suramericana</h4>
+                            <p>Análisis de los recursos de TI del Corporativo de Suramericana para la corrección de errores, solución de incidentes y el buen funcionamiento de la infraestructura tecnológica</p>
+                            <p>2017 - 2020</p>
+                        </div>
+                        <div class="une">
+                            <h4>R&E - Tigo Une</h4>
+                            <p>Análisis y monitoreo del funcionamiento de las redes y reporte al área encargada para la solución de fallas</p>
+                            <p>2014 - 2015</p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        
+        <section class="profile" id="skills">
+            <div class="profile-content">
+                <div class="skills profile-card">
+                    <div class="skills1 flex-c">
+                        <h2>HABILIDADES BLANDAS</h2>
+                        <p>Actitud  - Aprendizaje continuo - Capacidad de adaptación - Trabajo en equipo - Ganas de aprender  - Capacidad creativa - Accesibilidad y disposición a ayudar</p>
+                    </div>
+                    <div class="skills2 flex-c">
+                        <h2>HABILIDADES TÉCNICAS</h2>
+                        <p>Desarrollo Web Front End con Angular - Desarrollo de Apps  iOS y Android  con Flutter (En Proceso) - Computación en la nube - Infraestructura de TI - Seguridad informática</p>
+                    </div>
+                    <div class="tech">
+                        <div class="front">
+                            <h3 class="flex">FRONTEND</h3>
+                            <div class="logos-front">
+                                <div class="">
+                                    <img src="./assets/logos/html.webp" alt="HTML">
+                                    <img src="./assets/logos/css.webp" alt="CSS">
+                                    <img src="./assets/logos/js.webp" alt="Javascript">
+                                    <img src="./assets/logos/typescript.webp" alt="Typescript">
+                                </div>
+                                <div class="">
+                                    <img src="./assets/logos/angular.webp" alt="Angular">
+                                    <img src="./assets/logos/react.webp" alt="React">
+                                    <img src="./assets/logos/dart.webp" alt="Dart">
+                                    <img src="./assets/logos/flutter.webp" alt="Flutter">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back flex-c">
+                            <h3>BACKEND</h3>
+                            <div class="logos-back flex-c">
+                                <img src="./assets/logos/node.webp" alt="NodeJS">
+                                <img src="./assets/logos/firebase.webp" alt="Firebase">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tools">
+                        <h3 class="flex">HERRAMIENTAS</h3>
+                            <div class="flex-tool">
+                                <img src="./assets/logos/vscode.webp" alt="VS Code">
+                                <img src="./assets/logos/apple.webp" alt="Apple">
+                                <img src="./assets/logos/mongodb.webp" alt="MongoDB">
+                            </div>
+                            <div class="flex-tool">
+                                <img src="./assets/logos/github.webp" alt="GitHub">
+                                <img src="./assets/logos/windows.webp" alt="Windows">
+                                <img src="./assets/logos/mysql.webp" alt="MySQL">
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+
         <!-- portfolio -->
 
-        <section class="portfolio" id="portfolio">
-            <div class="portfolio-content">
-                <article class="project-1 profile-card">
-                    <h3>Alienfy</h3>
-                    <img class="portfolio-img" src="./assets/web-examp.jpeg" alt="Imagen Proyecto">
-                    <p>Clone de Spotify en Angular con backend en NodeJS</p>
-                    <a class="btn" href="https://www.linkedin.com/in/julicape/" target="blank"
-                        rel="noopener">Ver Proyecto</a>
-                    <a class="btn" href="https://www.linkedin.com/in/julicape/" target="blank"
-                        rel="noopener">Codigo en Github</a>
-                </article>
-                <article class="project-2 profile-card">
-                    <h3>Frontend Tools</h3>
-                    <img class="portfolio-img" src="./assets/web-examp.jpeg" alt="Imagen Proyecto">
-                    <p>App en Angular con herramientas web para Frontend</p>
-                    <a class="btn" href="https://www.linkedin.com/in/julicape/" target="blank"
-                        rel="noopener">Ver Proyecto</a>
-                    <a class="btn" href="https://www.linkedin.com/in/julicape/" target="blank"
-                        rel="noopener">Codigo en Github</a>
-                </article>
-                <article class="project-3 profile-card">
-                    <h3>App del Clima</h3>
-                    <img class="portfolio-img" src="./assets/web-examp.jpeg" alt="Imagen Proyecto">
-                    <p>App en Angular para consultar clima con la API de OpenWeather</p>
-                    <a class="btn" href="https://www.linkedin.com/in/julicape/" target="blank"
-                        rel="noopener">Ver Proyecto</a>
-                    <a class="btn" href="https://www.linkedin.com/in/julicape/" target="blank"
-                        rel="noopener">Codigo en Github</a>
-                </article>
-                <article class="project-4 profile-card">
-                    <h3>CRUD MEAN</h3>
-                    <img class="portfolio-img" src="./assets/web-examp.jpeg" alt="Imagen Proyecto">
-                    <p>CRUD en Angular con backend en NodeJS y MongoDB</p>
-                    <a class="btn" href="https://www.linkedin.com/in/julicape/" target="blank"
-                        rel="noopener">Ver Proyecto</a>
-                    <a class="btn" href="https://www.linkedin.com/in/julicape/" target="blank"
-                        rel="noopener">Codigo en Github</a>
-                </article>
-            </div>
+        <section class="profile" id="portfolio">
+            <div class="profile-content">
+                <div class="portfolio profile-card">
+
+                    <div class="portfolio-card">
+
+                        <div class="preguntasApp">
+                            <div class="project-card">
+                                <div class="project-card-pic flex">
+                                    <a href="#" target="blank" rel="noopener">
+                                        <img src="./assets/preguntasApp.webp" alt="WebPage">
+                                    </a>
+                                </div>
+                                <div class="project-card-text flex-c">
+                                    <h3 class="flex">PREGUNTAS APP</h3>
+                                    <p>App que permite registrar usuarios, crear cuestionarios de preguntas y jugar a responderlas con puntaje y límite de tiempo, desarrollada en Angular con backend en Firebase</p>
+                                    <h3 class="flex">Tecnologías usadas</h3>
+                                        <div class="techs flex">
+                                            <img src="../assets/logos/html.webp" alt="HTML">
+                                            <img src="../assets/logos/css.webp" alt="CSS">
+                                            <img src="../assets/logos/typescript.webp" alt="Typescript">
+                                            <img src="../assets/logos/angular.webp" alt="Angular">
+                                            <img src="../assets/logos/boostrap.webp" alt="bootstrap">
+                                            <img src="../assets/logos/firebase.webp" alt="Firebase">
+                                        </div>
+                                    <div class="project-btns flex-c">
+                                        <a class="btn" href="#" target="blank" rel="noopener">Ver código en Github</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="alienfy">
+                            <div class="project-card">
+                                <div class="project-card-pic flex">
+                                    <a href="#" target="blank" rel="noopener">
+                                        <img src="./assets/alienfy.webp" alt="WebPage">
+                                    </a>
+                                </div>
+                                <div class="project-card-text flex-c">
+                                    <h3 class="flex">ALIENFY</h3>
+                                    <p>Con de la aplicación de música Spotify que permite reproducir canciones desde un backend en NodeJS</p>
+                                    <h3 class="flex">Tecnologías usadas</h3>
+                                        <div class="techs flex">
+                                            <img src="./assets/logos/html.webp" alt="HTML">
+                                            <img src="./assets/logos/css.webp" alt="CSS">
+                                            <img src="./assets/logos/typescript.webp" alt="Typescript">
+                                            <img src="./assets/logos/angular.webp" alt="Angular">
+                                            <img src="./assets/logos/boostrap.webp" alt="bootstrap">
+                                            <img src="./assets/logos/node.webp" alt="NodeJS">
+                                        </div>
+                                    <div class="project-btns flex-c">
+                                        <a class="btn" href="#" target="blank" rel="noopener">Ver código en Github</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="weatherapp">
+                            <div class="project-card">
+                                <div class="project-card-pic flex">
+                                    <a href="https://alientradev-angular-weatherapp.netlify.app/" target="blank" rel="noopener">
+                                        <img src="./assets/weatherapp.webp" alt="WebPage">
+                                    </a>
+                                </div>
+                                <div class="project-card-text flex-c">
+                                    <h3 class="flex">WEATHER APP</h3>
+                                    <p>App que permite consultar el clima y otros datos atmosféricos por medio del nombre de una ciudad consumiendo la API de Openweather</p>
+                                    <h3 class="flex">Tecnologías usadas</h3>
+                                        <div class="techs flex">
+                                            <img src="./assets/logos/html.webp" alt="HTML">
+                                            <img src="./assets/logos/css.webp" alt="CSS">
+                                            <img src="./assets/logos/typescript.webp" alt="Typescript">
+                                            <img src="./assets/logos/angular.webp" alt="Angular">
+                                            <img src="./assets/logos/boostrap.webp" alt="bootstrap">
+                                            <img src="./assets/logos/firebase.webp" alt="Openweather">
+                                        </div>
+                                    <div class="project-btns flex-c">
+                                        <a class="btn" href="#" target="blank" rel="noopener">Ver código en Github</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="notepad">
+                            <div class="project-card">
+                                <div class="project-card-pic flex">
+                                    <a href="#" target="blank" rel="noopener">
+                                        <img src="./assets/web-examp.webp" alt="WebPage">
+                                    </a>
+                                </div>
+                                <div class="project-card-text flex-c">
+                                    <h3 class="flex">APP NOTAS</h3>
+                                    <p>Aplicación CRUD para crear, editar, almacenar y eliminar notas, app desarrollada en Angular y backend en Firebase</p>
+                                    <h3 class="flex">Tecnologías usadas</h3>
+                                        <div class="techs flex">
+                                            <img src="./assets/logos/html.webp" alt="HTML">
+                                            <img src="./assets/logos/css.webp" alt="CSS">
+                                            <img src="./assets/logos/typescript.webp" alt="Typescript">
+                                            <img src="./assets/logos/angular.webp" alt="Angular">
+                                            <img src="./assets/logos/boostrap.webp" alt="bootstrap">
+                                            <img src="./assets/logos/firebase.webp" alt="Firebase">
+                                        </div>
+                                    <div class="project-btns flex-c">
+                                        <a class="btn" href="#" target="blank" rel="noopener">Ver código en Github</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="frontendtools">
+                            <div class="project-card">
+                                <div class="project-card-pic flex">
+                                    <a href="#" target="blank" rel="noopener">
+                                        <img src="./assets/web-examp.webp" alt="WebPage">
+                                    </a>
+                                </div>
+                                <div class="project-card-text flex-c">
+                                    <h3 class="flex">FRONTEND TOOLS</h3>
+                                    <p>App que contiene múltiples herramientas web para desarrolladores Front End, seleccionadas por categoría</p>
+                                    <h3 class="flex">Tecnologías usadas</h3>
+                                        <div class="techs flex">
+                                            <img src="./assets/logos/html.webp" alt="HTML">
+                                            <img src="./assets/logos/css.webp" alt="CSS">
+                                            <img src="./assets/logos/typescript.webp" alt="Typescript">
+                                            <img src="./assets/logos/angular.webp" alt="Angular">
+                                            <img src="./assets/logos/boostrap.webp" alt="bootstrap">
+                                        </div>
+                                    <div class="project-btns flex-c">
+                                        <a class="btn" href="#" target="blank" rel="noopener">Ver código en Github</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="listm">
+                            <div class="project-card">
+                                <div class="project-card-pic flex">
+                                    <a href="#" target="blank" rel="noopener">
+                                        <img src="./assets/web-examp.webp" alt="WebPage">
+                                    </a>
+                                </div>
+                                <div class="project-card-text flex-c">
+                                    <h3 class="flex">APP LISTA MERCADO</h3>
+                                    <p>Aplicación CRUD para crear, editar, almacenar y eliminar items de una lista de mercado, app desarrollada en Angular y backend en NodeJS y MongoDB</p>
+                                    <h3 class="flex">Tecnologías usadas</h3>
+                                        <div class="techs flex">
+                                            <img src="./assets/logos/html.webp" alt="HTML">
+                                            <img src="./assets/logos/css.webp" alt="CSS">
+                                            <img src="./assets/logos/typescript.webp" alt="Typescript">
+                                            <img src="./assets/logos/angular.webp" alt="Angular">
+                                            <img src="./assets/logos/boostrap.webp" alt="bootstrap">
+                                            <img src="./assets/logos/node.webp" alt="NodeJS">
+                                        </div>
+                                    <div class="project-btns flex-c">
+                                        <a class="btn" href="#" target="blank" rel="noopener">Ver código en Github</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="plasticos">
+                            <div class="project-card">
+                                <div class="project-card-pic flex">
+                                    <a href="#" target="blank" rel="noopener">
+                                        <img src="./assets/web-examp.webp" alt="WebPage">
+                                    </a>
+                                </div>
+                                <div class="project-card-text flex-c">
+                                    <h3 class="flex">PLASTICOS</h3>
+                                    <p>Landing Page desarrollada para la empresa de la ciudad de Medellín, Plasticos</p>
+                                    <h3 class="flex">Tecnologías usadas</h3>
+                                        <div class="techs flex">
+                                            <img src="./assets/logos/html.webp" alt="HTML">
+                                            <img src="./assets/logos/css.webp" alt="CSS">
+                                            <img src="./assets/logos/js.webp" alt="Javascript">
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="etiketados">
+                            <div class="project-card">
+                                <div class="project-card-pic flex">
+                                    <a href="https://etiketados.com.co/" target="blank" rel="noopener">
+                                        <img src="./assets/etiketados.webp" alt="WebPage">
+                                    </a>
+                                </div>
+                                <div class="project-card-text flex-c">
+                                    <h3 class="flex">ETIKETADOS</h3>
+                                    <p>Landing Page desarrollada para la empresa de la ciudad de Medellín, Etiketados</p>
+                                    <h3 class="flex">Tecnologías usadas</h3>
+                                        <div class="techs flex">
+                                            <img src="./assets/logos/html.webp" alt="HTML">
+                                            <img src="./assets/logos/css.webp" alt="CSS">
+                                            <img src="./assets/logos/js.webp" alt="Javascript">
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dlr">
+                            <div class="project-card">
+                                <div class="project-card-pic flex">
+                                    <a href="https://dlrsolucionestec.com.co/" target="blank" rel="noopener">
+                                        <img src="./assets/dlr.webp" alt="WebPage">
+                                    </a>
+                                </div>
+                                <div class="project-card-text flex-c">
+                                    <h3 class="flex">DLR SOLUCIONES</h3>
+                                    <p>Landing Page desarrollada para la empresa de la ciudad de Medellín, DLR Soluciones Técnicas</p>
+                                    <h3 class="flex">Tecnologías usadas</h3>
+                                        <div class="techs flex">
+                                            <img src="./assets/logos/html.webp" alt="HTML">
+                                            <img src="./assets/logos/css.webp" alt="CSS">
+                                            <img src="./assets/logos/js.webp" alt="Javascript">
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>    
         </section>
 
         <!-- contact -->
@@ -173,12 +448,15 @@
                             required>
                         <input type="email" name="email" placeholder="Ingresa tu correo *" title="Email incorrecto"
                             pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
-                        <textarea name="comments" cols="50" rows="10" placeholder="Déjame tus comentarios *"
+                        <textarea name="comments" cols="50" rows="5" placeholder="Déjame tus comentarios *"
                             required></textarea>
                         <div class="contact-form-loader text-center none"> <img class="none" src=" assets/loader.svg"
                                 alt="Enviando...">
                         </div>
                         <input class="btn" type="submit" value="ENVIAR MENSAJE">
+                        <a href="https://www.linkedin.com/in/julicape/" target="blank" rel="noopener">
+                            <img src="./assets/logos/linkedin.svg" alt="">
+                        </a>
                     </form>
                     <article id="gracias" class="modal">
                         <div class="modal-content">
@@ -188,16 +466,19 @@
                         </div>
                     </article>
                 </div>
-            
         </section>
 
     </div>
 
     <!-- Footer -->
 
-    <footer class="footer">
+    <footer class="footer flex">
         <small>
-            <h3>Diseñado en el planeta tierra con ❤️ por Julian 👽</h3>
+            <h3>
+                <a href="https://www.linkedin.com/in/julicape/" target="blank" rel="noopener">🛸 </a>
+                Diseñado en el planeta tierra por 
+                <a href="https://www.linkedin.com/in/julicape/" target="blank" rel="noopener">👽</a>
+            </h3>
         </small>
         <!-- <a href="https://www.youtube.com/watch?v=kHCn5h4_dh0&list=PLUja9J5M1XReqoBal5IKog_PWz2Q_hZ7Y" target="_blank"
             rel="noopener">Click!</a> -->
