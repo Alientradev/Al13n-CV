@@ -324,13 +324,13 @@ body::-webkit-scrollbar-thumb {
 .home h1 {
     color: var(--white);
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     text-shadow: var(--text-Shadow);
 }
 
 .home h2 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     text-shadow: var(--text-Shadow);
 }
 
