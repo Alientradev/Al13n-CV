@@ -335,6 +335,10 @@ body::-webkit-scrollbar-thumb {
     text-shadow: var(--text-Shadow);
 }
 
+.title-type a {
+    color: var(--white);
+}
+
 @media screen and (min-width: 1024px) {
 
     .home h1 {
@@ -354,8 +358,8 @@ body::-webkit-scrollbar-thumb {
 
 /*  --------------------------------------- Button --------------------------------------- */
 
-button,
-button::after {
+.body-button,
+.body-button::after {
     padding: 10px 15px;
     margin: 5px;
     width: auto;
@@ -370,7 +374,7 @@ button::after {
     position: relative;
 }
 
-button::after {
+.body-button::after {
     --slice-0: inset(50% 50% 50% 50%);
     --slice-1: inset(80% -6px 0 0);
     --slice-2: inset(50% -6px 30% 0);
@@ -389,7 +393,7 @@ button::after {
     clip-path: var(--slice-0);
 }
 
-button:hover::after {
+.body-button:hover::after {
     animation: 1s glitch;
     animation-timing-function: steps(2, end);
 }
