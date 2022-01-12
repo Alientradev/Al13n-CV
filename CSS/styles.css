@@ -97,7 +97,7 @@ p {
 
 /* ----------------------------------------------Utilities---------------------------------------------- */
 
-.btn {
+/* .btn {
     color: var(--third-color);
     background-color: var(--first-color);
     border-radius: 5rem;
@@ -113,7 +113,7 @@ p {
 .btn:hover {
     color: var(--second-color);
     background-color: var(--white);
-}
+} */
 
 .none {
     display: none;
@@ -206,12 +206,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .menu a {
-    padding: 1rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center;
-    color: var(--first-color);
-    text-shadow: var(--text-Shadow);
+    padding: 0px;
+    margin: 0px;
 }
 
 .menu a:hover {
@@ -374,6 +370,22 @@ body::-webkit-scrollbar-thumb {
     position: relative;
 }
 
+.menu-button,
+.menu-button::after {
+    padding: 6px 0px;
+    margin: 5px;
+    width: auto;
+    font-family: var(--title-font);
+    background: linear-gradient(45deg, transparent 5%, #00BFFF 5%);
+    border: 0;
+    color: var(--third-color);
+    letter-spacing: 3px;
+    line-height: 1;
+    box-shadow: 6px 0px 0px #ffffff;
+    outline: transparent;
+    position: relative;
+}
+
 .body-button::after {
     --slice-0: inset(50% 50% 50% 50%);
     --slice-1: inset(80% -6px 0 0);
@@ -393,7 +405,31 @@ body::-webkit-scrollbar-thumb {
     clip-path: var(--slice-0);
 }
 
+.menu-button::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    content: "CLICK ME";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #ffffff 3%, #00e6f6 5%, #00BFFF 5%);
+    text-shadow: -3px -3px 0px #f8f405, 3px 3px 0px #ffffff;
+    clip-path: var(--slice-0);
+}
+
 .body-button:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+}
+
+.menu-button:hover::after {
     animation: 1s glitch;
     animation-timing-function: steps(2, end);
 }
