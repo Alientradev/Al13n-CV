@@ -211,6 +211,7 @@ body::-webkit-scrollbar-thumb {
     font-weight: bold;
     text-align: center;
     color: var(--first-color);
+    text-shadow: var(--text-Shadow);
 }
 
 .menu a:hover {
@@ -268,7 +269,7 @@ body::-webkit-scrollbar-thumb {
 /* ---------------------------------------------- Header CSS---------------------------------------------- */
 
 .header {
-    background: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0.192);
     box-shadow: 0 0px 30px 0 rgba(0, 191, 255, 0.50);
     backdrop-filter: blur(7.0px);
     -webkit-backdrop-filter: blur(5.0px);
